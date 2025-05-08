@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multas y sanciones generadas en la plataforma SECOP 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0078d4;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .iframe-container {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            background-color: white;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .iframe-container:hover {
+            transform: translateY(-5px);
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        .section-title {
+            font-size: 2em;
+            color: #0078d4;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 700;
+            border-bottom: 2px solid #0078d4;
+            padding-bottom: 10px;
+        }
+        .paragraph {
+            text-align: justify;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            font-size: 1.1em;
+            color: #333;
+        }
+        .list-style {
+            list-style-position: inside;
+            padding-left: 0;
+            list-style-type: disc;
+        }
+        .list-style li {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+            color: #333;
+        }
+        .warning {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fef08a;
+            color: #1e293b;
+            border-radius: 8px;
+            border: 1px solid #fde047;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Multas y sanciones generadas en la plataforma SECOP 1
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="iframe-container">
+                <iframe
+                    title="Informe Power BI"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiNDU4NjFiMTgtM2E2MC00NWQ2LThkNTUtMWFhMGNlMzllMTFkIiwidCI6IjRmMWUwNDRkLTNkNzAtNDk5MC1iMjZhLWI5NWYwYzY0MmUxYSIsImMiOjR9"
+                    allowFullScreen="true">
+                </iframe>
+            </div>
+            <h2 class="section-title">Utilización de la Base de Datos</h2>
+            <p class="paragraph">
+                La base de datos registra multas y sanciones de SECOP I para identificar proveedores sancionados, analizar reincidencia, evaluar riesgos, dar seguimiento a contratos y promover transparencia en la contratación pública.
+            </p>
+            <h2 class="section-title">Problemáticas</h2>
+            <ul class="list-style">
+                <li>1 Identificación de proveedores sancionados: La base de datos permite identificar qué contratistas o proveedores han sido multados o sancionados. Esto es útil para evitar futuras contrataciones con actores de alto riesgo jurídico o reputacional.</li>
+                <li>2 Análisis de reincidencia: Se puede utilizar la base de datos para observar si ciertas empresas o personas naturales han recibido múltiples sanciones. Esto puede ayudar a detectar patrones de incumplimiento y tomar medidas preventivas.</li>
+                <li>3 Evaluación del riesgo contractual: La información de las multas y sanciones se puede utilizar para calcular indicadores de riesgo y evaluar la idoneidad de los contratistas en futuros procesos de selección.</li>
+                <li>4 Seguimiento a la gestión de contratos: La base de datos facilita el control y seguimiento de los contratos que tienen antecedentes de sanciones, lo que permite tomar medidas preventivas en proyectos futuros.</li>
+                <li>5 Transparencia y control social: Almacenar la información de las sanciones de forma centralizada permite fortalecer la veeduría ciudadana y el trabajo de los entes de control, al facilitar la consulta de sanciones por entidad, proveedor, tipo de contrato, etc.</li>
+            </ul>
+            <h2 class="section-title">Soluciones</h2>
+            <ul class="list-style">
+                <li>Utilizar la gráfica "Recuento de valor_sancion por nombre_contratista" para identificar a los contratistas con el mayor valor acumulado de sanciones.  Implementar un sistema de alertas tempranas en los procesos de contratación para notificar a los funcionarios cuando se identifique a un proveedor de alto riesgo.</li>
+                <li>Combinar la gráfica de "Recuento de valor_sancion por nombre_contratista y fecha_de_firmeza" con la tabla que muestra "valor_sancion", "Recuento de fecha_de_publicacion" y "Recuento de fecha_de_firmeza" para analizar la evolución de las sanciones a lo largo del tiempo para un contratista específico. Esto permite identificar patrones de reincidencia y aplicar medidas correctivas más efectivas, como la suspensión temporal o la exclusión de futuros procesos de contratación.</li>
+                <li>Crear un panel de control en Power BI que combine datos de sanciones con información clave de los contratos (fechas de inicio y fin, valor, etc.).  Esto permitiría a los gestores de contratos visualizar fácilmente el historial de sanciones de un contratista y tomar medidas proactivas para mitigar el riesgo de incumplimiento.</li>
+                <li>Desarrollar un portal web interactivo utilizando el informe de Power BI insertado, que permita a los ciudadanos y a los entes de control explorar los datos de sanciones por entidad, contratista, tipo de contrato y número de resolución.  Esto aumentaría la transparencia del proceso de contratación y facilitaría la detección de irregularidades.</li>
+                <li> Utilizar la gráfica "Recuento de nombre_entidad por numero_de_resolucion y nombre_contratista" para comparar los patrones de sanción entre diferentes entidades.  Esto permitiría identificar posibles disparidades y desarrollar guías de mejores prácticas para estandarizar los procesos de sanción y garantizar la equidad.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
